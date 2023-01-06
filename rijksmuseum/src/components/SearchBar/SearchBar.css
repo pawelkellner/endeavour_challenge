@@ -1,0 +1,29 @@
+.searchBar{
+    top: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    z-index: 2;
+}
+
+.searchBar__input{
+    all: unset;
+    font-size: 150%;
+    background: white;
+    width: 40rem;
+    height: 5rem;
+    border-radius: 4rem;
+    padding-left: 2rem;
+    padding-right: 5rem;
+}
+
+.searchBar__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
