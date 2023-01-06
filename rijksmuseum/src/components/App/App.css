@@ -9,5 +9,19 @@ html{
 }
 
 body{
+  background: white;
   font-family: sans-serif;
+}
+
+.content__container{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.loading{
+  width: 10rem;
+  height: 10rem;
 }
