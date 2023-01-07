@@ -4,7 +4,11 @@ const SearchBar = (props) =>{
 
     const search = (e) =>{
         e.preventDefault();
-        const convertSpaces = e.target[0].value.replace(/ /g,"+");
+        const inputFromUser = e.target[0].value;
+
+        const inputToUpperCase = inputFromUser.split(" ").map((word) => word === "van" || word === "der" ? word : word.charAt(0).toUpperCase() + word.slice(1)).join(" ")
+        console.log(inputToUpperCase)
+        const convertSpaces = inputToUpperCase.replace(/ /g,"+");
         props.submit(convertSpaces)
     }
 
