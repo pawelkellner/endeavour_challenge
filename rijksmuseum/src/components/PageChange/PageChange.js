@@ -1,7 +1,6 @@
 import "./PageChange.css";
 
 const PageChange = (props) =>{
-    console.log(props.pageCounter)
     return(
         <section className="page">
             <div className="page__counter">

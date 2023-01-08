@@ -1,0 +1,52 @@
+.filter{
+    cursor: pointer;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 11rem;
+    height: 5rem;
+    background: white;
+    z-index: 2;
+    top: 2.5%;
+    right: 66%;
+    border-radius: 1rem;
+}
+
+.filter i{
+    font-size: 1.5rem;
+}
+
+.filter__dropdown{
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: calc(2.5% + 3.4rem);
+    right: 66%;
+    height: max-content;
+    width: 11rem;
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-top: 1.6rem; 
+}
+
+.filter__dropdown ul{
+    list-style: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.filter__colorsWrapper{
+    display: grid;
+    gap: 0.1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.colorBox{
+    cursor: pointer;
+    width: 2rem;
+    aspect-ratio: 1/1;
+    border: 0.1rem solid black;
+}
